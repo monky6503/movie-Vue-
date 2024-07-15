@@ -37,7 +37,7 @@
           })
         } else {
           fetch(
-            `http://www.omdbapi.com/?apikey=${apikey}&t=${this.searchQuery}&y=${this.year}&type=movie&plot=full`,
+            `https://www.omdbapi.com/?apikey=${apikey}&t=${this.searchQuery}&y=${this.year}&type=movie&plot=full`,
           )
             .then((response) => {
               return response.json()
