@@ -11,6 +11,7 @@
         searchQuery: '',
         movies: [],
         favoriteList: JSON.parse(localStorage.getItem('favoriteList')) || [],
+        movieAnimation:movieAnimation,
       }
     },
     mounted() {
@@ -89,7 +90,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: movieAnimation,
+          path: this.movieAnimation,
         })
       },
     },
