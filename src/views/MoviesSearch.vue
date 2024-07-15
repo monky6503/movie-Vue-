@@ -88,7 +88,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '/movieAnimation.json',
+          path: 'movieAnimation.json',
         })
       },
     },
