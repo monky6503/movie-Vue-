@@ -2,7 +2,6 @@
   import AOS from 'aos'
   import 'aos/dist/aos.css'
   import lottie from 'lottie-web'
-  import movieAnimation from '@/assets/movieAnimation.json'
   export default {
     name: 'MoviesSearch',
     data() {
@@ -11,7 +10,6 @@
         searchQuery: '',
         movies: [],
         favoriteList: JSON.parse(localStorage.getItem('favoriteList')) || [],
-        movieAnimation:movieAnimation,
       }
     },
     mounted() {
@@ -90,7 +88,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: this.movieAnimation,
+          path: '/animations/movieAnimation.json',
         })
       },
     },
