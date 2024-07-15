@@ -88,7 +88,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '../src/assets/movieAnimation.json',
+          path: '../assets/movieAnimation.json',
         })
       },
     },
@@ -98,7 +98,7 @@
 
 <template>
   <main
-    class="w-full min-h-screen bg-[url('../src/assets/moviebackground.jpeg')] bg-contain bg-center"
+    class="w-full min-h-screen bg-[url('../src/assets/moviebackground.jpeg')] bg-cover bg-center"
   >
     <div
       class="navbar bg-black justify-center flex flex-col lg:flex-row shadow-md fixed z-10"
