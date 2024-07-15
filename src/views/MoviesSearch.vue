@@ -2,6 +2,7 @@
   import AOS from 'aos'
   import 'aos/dist/aos.css'
   import lottie from 'lottie-web'
+  
   export default {
     name: 'MoviesSearch',
     data() {
@@ -88,7 +89,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '../assets/movieAnimation.json',
+          path: '@/assets/movieAnimation.json',
         })
       },
     },
