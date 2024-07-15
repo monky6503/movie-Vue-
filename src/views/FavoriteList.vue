@@ -47,7 +47,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '../src/assets/movieAnimation.json',
+          path: 'movieAnimation.json',
         })
       },
     },
