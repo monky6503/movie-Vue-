@@ -38,9 +38,6 @@
           (favMovie) => favMovie.imdbID === movie.imdbID,
         )
       },
-      goBack() {
-        this.$router.push('/')
-      },
       loadAnimation() {
         lottie.loadAnimation({
           container: this.$refs.title,
@@ -62,7 +59,7 @@
     <div
       class="navbar bg-black flex items-center justify-between shadow-md fixed z-10 px-5"
     >
-      <button @click="goBack" class="btn">GO Back</button>
+      <router-link to="/" class="btn">GO Back</router-link>
       <p ref="title" class="text-4xl text-center px-3 w-52"></p>
       <div class="w-24"></div>
     </div>

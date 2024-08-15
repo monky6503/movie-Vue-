@@ -79,9 +79,6 @@
           (favMovie) => favMovie.imdbID === movie.imdbID,
         )
       },
-      goToFavorites() {
-        this.$router.push('/favoritelist') //導到其他頁面
-      },
       loadAnimation() {
         lottie.loadAnimation({
           container: this.$refs.title,
@@ -92,7 +89,6 @@
         })
       },
     },
-    computed: {},
   }
 </script>
 
@@ -135,12 +131,12 @@
         >
           Search
         </button>
-        <button
-          @click="goToFavorites"
+        <router-link
+          to="/favoritelist"
           class="btn btn-secondary w-full md:w-auto"
         >
           My Favorite
-        </button>
+        </router-link>
       </div>
       <div><button type="button"></button></div>
     </div>
@@ -207,7 +203,7 @@
             </ul>
           </div>
           <div class="flex items-center justify-between p-3">
-            <div class="flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-2">
               <div
                 v-for="(text, index) in movie.Genre.split(',')"
                 :key="index"
