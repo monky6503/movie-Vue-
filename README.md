@@ -34,6 +34,13 @@ npm run build
 npm run lint
 ```
 
+## Tool
+- Vue + Vite as a development framework.
+- TailWind:The CSS framework to use it.
+- LottieFile: The Great designs come alive with motion!
+- AOS:It's a fadein fadeout animation library.
+- Sweetalert2:use for notification.
+
 #### This is a Movie Search that user can enter the movie name and release year to search, and then they can find relevant movie information (release date, director, screenwriter, actors, etc.)
 ![截圖 2024-09-12 16 41 45](https://github.com/user-attachments/assets/65ef412b-d059-4030-a3d2-815108883f30)
 ![截圖 2024-09-12 16 42 32](https://github.com/user-attachments/assets/1757ae74-9c94-4f99-8e43-62b5c466cf52)
